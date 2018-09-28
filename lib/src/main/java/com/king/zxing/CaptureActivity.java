@@ -19,7 +19,6 @@ package com.king.zxing;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
@@ -27,7 +26,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Surface;
@@ -37,16 +35,18 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.DecodeHintType;
-import com.google.zxing.Result;
-import com.google.zxing.ResultMetadataType;
 import com.king.zxing.camera.CameraManager;
 
 import java.io.IOException;
 import java.util.Collection;
 import java.util.EnumSet;
 import java.util.Map;
+import java.util.Set;
+
+import core.BarcodeFormat;
+import core.DecodeHintType;
+import core.Result;
+import core.ResultMetadataType;
 
 /**
  * This activity opens the camera and does the actual scanning on a background thread. It draws a
@@ -85,7 +85,7 @@ public class CaptureActivity extends Activity implements SurfaceHolder.Callback 
 //    private IntentSource source;
 //    private String sourceUrl;
 //    private ScanFromWebPageManager scanFromWebPageManager;
-    private Collection<BarcodeFormat> decodeFormats;
+private Set<BarcodeFormat> decodeFormats;
     private Map<DecodeHintType,?> decodeHints;
     private String characterSet;
 //    private HistoryManager historyManager;

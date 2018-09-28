@@ -24,11 +24,13 @@ import android.hardware.Camera;
 import android.os.Handler;
 import android.util.Log;
 import android.view.SurfaceHolder;
-import com.google.zxing.PlanarYUVLuminanceSource;
+
 import com.king.zxing.camera.open.OpenCamera;
 import com.king.zxing.camera.open.OpenCameraInterface;
 
 import java.io.IOException;
+
+import core.PlanarYUVLuminanceSource;
 
 /**
  * This object wraps the Camera service object and expects to be the only one talking to it. The

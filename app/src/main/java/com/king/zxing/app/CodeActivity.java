@@ -24,8 +24,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.zxing.BarcodeFormat;
 import com.king.zxing.util.CodeUtils;
+
+import core.BarcodeFormat;
 
 /**
  * @author Jenly <a href="mailto:jenly1314@gmail.com">Jenly</a>

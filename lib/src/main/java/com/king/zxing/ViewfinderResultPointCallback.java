@@ -17,8 +17,8 @@ package com.king.zxing;
  */
 
 
-import com.google.zxing.ResultPoint;
-import com.google.zxing.ResultPointCallback;
+import core.ResultPoint;
+import core.ResultPointCallback;
 
 final class ViewfinderResultPointCallback implements ResultPointCallback {
 

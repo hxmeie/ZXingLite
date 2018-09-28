@@ -25,27 +25,26 @@ import android.support.annotation.NonNull;
 import android.text.TextPaint;
 import android.text.TextUtils;
 
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.BinaryBitmap;
-import com.google.zxing.DecodeHintType;
-import com.google.zxing.EncodeHintType;
-import com.google.zxing.MultiFormatReader;
-import com.google.zxing.MultiFormatWriter;
-import com.google.zxing.RGBLuminanceSource;
-import com.google.zxing.Result;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
-import com.google.zxing.common.HybridBinarizer;
-import com.google.zxing.qrcode.QRCodeReader;
-import com.google.zxing.qrcode.QRCodeWriter;
-import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import com.king.zxing.DecodeFormatManager;
-import com.king.zxing.DecodeHintManager;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Map;
 import java.util.Vector;
+
+import core.BarcodeFormat;
+import core.BinaryBitmap;
+import core.DecodeHintType;
+import core.EncodeHintType;
+import core.MultiFormatReader;
+import core.MultiFormatWriter;
+import core.RGBLuminanceSource;
+import core.Result;
+import core.WriterException;
+import core.common.BitMatrix;
+import core.common.HybridBinarizer;
+import core.qrcode.QRCodeReader;
+import core.qrcode.QRCodeWriter;
+import core.qrcode.decoder.ErrorCorrectionLevel;
 
 
 /**

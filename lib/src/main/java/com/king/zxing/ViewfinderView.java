@@ -22,7 +22,6 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.Rect;
@@ -37,11 +36,12 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 
-import com.google.zxing.ResultPoint;
 import com.king.zxing.camera.CameraManager;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import core.ResultPoint;
 
 /**
  * This view is overlaid on top of the camera preview. It adds the viewfinder rectangle and partial

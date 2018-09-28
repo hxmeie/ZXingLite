@@ -17,14 +17,6 @@ package com.king.zxing;
 
 
 import android.graphics.Bitmap;
-import com.google.zxing.BinaryBitmap;
-import com.google.zxing.DecodeHintType;
-import com.google.zxing.MultiFormatReader;
-import com.google.zxing.PlanarYUVLuminanceSource;
-import com.google.zxing.ReaderException;
-import com.google.zxing.Result;
-import com.google.zxing.common.HybridBinarizer;
-
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -33,6 +25,14 @@ import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
 import java.util.Map;
+
+import core.BinaryBitmap;
+import core.DecodeHintType;
+import core.MultiFormatReader;
+import core.PlanarYUVLuminanceSource;
+import core.ReaderException;
+import core.Result;
+import core.common.HybridBinarizer;
 
 final class DecodeHandler extends Handler {
 
