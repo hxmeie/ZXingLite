@@ -19,15 +19,7 @@ package core;
 import java.util.Map;
 
 import core.common.BitMatrix;
-import core.oned.CodaBarWriter;
-import core.oned.Code128Writer;
-import core.oned.Code39Writer;
-import core.oned.Code93Writer;
 import core.oned.EAN13Writer;
-import core.oned.EAN8Writer;
-import core.oned.ITFWriter;
-import core.oned.UPCAWriter;
-import core.oned.UPCEWriter;
 import core.qrcode.QRCodeWriter;
 
 /**
@@ -54,35 +46,11 @@ public final class MultiFormatWriter implements Writer {
 
         Writer writer;
         switch (format) {
-            case EAN_8:
-                writer = new EAN8Writer();
-                break;
-            case UPC_E:
-                writer = new UPCEWriter();
-                break;
             case EAN_13:
                 writer = new EAN13Writer();
                 break;
-            case UPC_A:
-                writer = new UPCAWriter();
-                break;
             case QR_CODE:
                 writer = new QRCodeWriter();
-                break;
-            case CODE_39:
-                writer = new Code39Writer();
-                break;
-            case CODE_93:
-                writer = new Code93Writer();
-                break;
-            case CODE_128:
-                writer = new Code128Writer();
-                break;
-            case ITF:
-                writer = new ITFWriter();
-                break;
-            case CODABAR:
-                writer = new CodaBarWriter();
                 break;
             default:
                 throw new IllegalArgumentException("No encoder available for format " + format);

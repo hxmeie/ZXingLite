@@ -47,21 +47,10 @@ public final class MultiFormatUPCEANReader extends OneDReader {
         if (possibleFormats != null) {
             if (possibleFormats.contains(BarcodeFormat.EAN_13)) {
                 readers.add(new EAN13Reader());
-            } else if (possibleFormats.contains(BarcodeFormat.UPC_A)) {
-                readers.add(new UPCAReader());
-            }
-            if (possibleFormats.contains(BarcodeFormat.EAN_8)) {
-                readers.add(new EAN8Reader());
-            }
-            if (possibleFormats.contains(BarcodeFormat.UPC_E)) {
-                readers.add(new UPCEReader());
             }
         }
         if (readers.isEmpty()) {
             readers.add(new EAN13Reader());
-            // UPC-A is covered by EAN-13
-            readers.add(new EAN8Reader());
-            readers.add(new UPCEReader());
         }
         this.readers = readers.toArray(new UPCEANReader[readers.size()]);
     }
